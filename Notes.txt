@@ -1,0 +1,21 @@
+To get list of installed app names without version:
+    pacman -Qqe
+
+To install a package only if the current version is not installed
+ie will do nothing if current version is already installed
+    sudo pacman -S --needed 'pkgname'
+
+To run a command in termite use:
+    termite --hold -e 'command goes here'
+        --hold keeps terminal open after command is run
+        -e indicates command to execute
+
+For this to work follow this link:
+    https://stackoverflow.com/questions/47952567/how-can-i3-config-execute-sudo-commands
+        -Makes it to where you don't need to enter password for sudo
+
+To auto populate yes or no options use this:
+    https://askubuntu.com/questions/338857/automatically-enter-input-in-command-line
+        -For yes do "yes | 'command'"
+        -For no do "yes n | 'command'"
+
